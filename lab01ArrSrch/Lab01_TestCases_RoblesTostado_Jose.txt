@@ -1,0 +1,81 @@
+* -----------------------------------------------------------------------------------------------------------------------------
+Test case 1
+
+- input:
+
+12	8.3	0.3
+11	9.2	0.3
+10  10.2	0.2
+9 10.9	0.2
+8	10.1	0.3
+7	8.7	0.5
+6	7.5	1.3
+5	6.9	1.5
+4	7.6	1.1
+3	8	0.6
+2	8.2	0.4
+1	8.1	0.5
+
+- output:
+
+Avg. windspeed (mph): 8.64
+Windspeeds above average:
+(7, July)
+(8, August)
+(9, September)
+(10, October)
+(11, November)
+5 months with above average windspeed.
+
+Avg. rainfall (in): 0.60
+Rainfalls above average:
+(4, April)
+(5, May)
+(6, June)
+3 months with above average rainfall.
+
+* -----------------------------------------------------------------------------------------------------------------------------
+Test case 2
+
+- input:
+
+10	91.2	0.1
+12	99.2	0.11
+11  40.2	0.15
+8 130.9	0.23
+9	110.1	0.23
+6	118.7	0.35
+2	67.5	1.43
+3	16.9	1.15
+5	72.6	1.41
+4	48	0.16
+7	38.2	0.34
+1	18.1	0.15
+
+- output:
+
+Avg. windspeed (mph): 70.97
+Windspeeds above average:
+(5, May)
+(6, June)
+(8, August)
+(9, September)
+(10, October)
+(12, December)
+6 months with above average windspeed.
+
+Avg. rainfall (in): 0.48
+Rainfalls above average:
+(2, February)
+(3, March)
+(5, May)
+3 months with above average rainfall.
+
+* -----------------------------------------------------------------------------------------------------------------------------
+Test case 3
+
+- input.txt does not exist so...
+
+- output:
+
+Error: java.io.FileNotFoundException: ./input.txt (No such file or directory). Please try again after fixing this.

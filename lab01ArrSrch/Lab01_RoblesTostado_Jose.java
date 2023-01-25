@@ -61,7 +61,7 @@ public class Lab01_RoblesTostado_Jose {
       printEntries(QTY, monthNames, windSpeeds, rainFalls);
 
       } catch(Exception e){
-          System.out.println("Error:" + e + ".");
+          System.out.println("Error: " + e + ". Please try again after fixing this.");
       } 
     System.out.println();
   }
