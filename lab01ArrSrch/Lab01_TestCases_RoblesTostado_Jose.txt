@@ -1,6 +1,10 @@
 * -----------------------------------------------------------------------------------------------------------------------------
 Test case 1
 
+- description:
+
+This test is in inverted order and in spite of it the code should work correctly
+
 - input:
 
 12	8.3	0.3
@@ -34,8 +38,14 @@ Rainfalls above average:
 (6, June)
 3 months with above average rainfall.
 
+
+
 * -----------------------------------------------------------------------------------------------------------------------------
 Test case 2
+
+- description:
+
+This test is in random order and in spite of it the code should work correctly
 
 - input:
 
@@ -73,6 +83,10 @@ Rainfalls above average:
 
 * -----------------------------------------------------------------------------------------------------------------------------
 Test case 3
+
+- description
+
+The test is testing for a file that does not exist, thus the code throws an error.
 
 - input.txt does not exist so...
 
