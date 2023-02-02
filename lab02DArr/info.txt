@@ -1,0 +1,32 @@
+Due Date: Sunday, February 5, 2023 – 11:59pm
+
+Deliverables: You are expected to submit two files in Blackboard:
+
+Lab2_Lastname_Firstname.java --- the java file of your program.
+
+Grading Criteria:
+
+[10 points] Program compiles and runs.
+
+[5 points] The program is indented correctly.
+
+[5 points] The program is documented properly.
+
+[5 points] The program uses correct variable types.
+
+[5 points] The program uses meaningful variable names.
+
+[10 points] Read input from file.
+
+[60 points] The program has a correct logic and generates correct output.
+
+
+? 15 points for each method ? All take a 2d int array
+
+-- farm_avg
+
+-- month_avg
+
+-- top_farms
+
+-- top_months

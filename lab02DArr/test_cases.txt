@@ -1,0 +1,54 @@
+////////
+Test case 1: Doing because all the information is correct and gives the same output as the pdf example
+////////
+
+--- input
+
+15, 50, 62, 72, 73, 74, 80, 55, 46, 43, 34, 19
+58, 60, 70, 73, 76, 82, 87, 65, 51, 42, 26, 19
+43, 59, 65, 72, 82, 65, 64, 53, 51, 41, 27, 22
+18, 42, 63, 69, 73, 85, 84, 65, 44, 38, 27, 14
+19, 46, 50, 77, 82, 95, 98, 93, 84, 74, 17, 10
+
+-- output
+
+Sum for farm 0 is: 623.00
+Average production for farm 0 is: 51.92
+Sum for farm 1 is: 709.00
+Average production for farm 1 is: 59.08
+Sum for farm 2 is: 644.00
+Average production for farm 2 is: 53.67
+Sum for farm 3 is: 622.00
+Average production for farm 3 is: 51.83
+Sum for farm 4 is: 745.00
+Average production for farm 4 is: 62.08
+
+Average production for month 0 is: 30.60
+Average production for month 1 is: 51.40
+Average production for month 2 is: 62.00
+Average production for month 3 is: 72.60
+Average production for month 4 is: 77.20
+Average production for month 5 is: 80.20
+Average production for month 6 is: 82.60
+Average production for month 7 is: 66.20
+Average production for month 8 is: 55.20
+Average production for month 9 is: 47.60
+Average production for month 10 is: 26.20
+Average production for month 11 is: 16.80
+
+Farm with the first highest production: 4 with production: 745
+Farm with the second highest production: 1 with production: 709
+Farm with the third highest production: 2 with production: 644
+
+Month with the first highest production: 6 with production: 413
+Month with the second highest production: 5 with production: 401
+Month with the third highest production: 4 with production: 386
+
+///////
+Test case 2: Doing to show the file not found exception
+///////
+
+--- the file "input_2.txt" is not located in the same folder
+--- output
+- Error from main: java.io.FileNotFoundException: ./input_2.txt (No such file or directory). Please try again after fixing this.
+
