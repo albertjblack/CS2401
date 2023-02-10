@@ -41,7 +41,7 @@ public class RoblesTostado_JoseAlberto_Lab03 {
 
         int range = 20;
         int diameter = (int) (Math.random() * range) + 2;
-        diameter = 13;
+        // diameter = 13;
 
         canContain(boxes, diameter);
 
