@@ -14,6 +14,7 @@
  * 3. To 'run', i used the const PACKPATH="./Lab03/" because the main cannot be changed -> I used it as the value to add as prefix when opening the file
  * $  java Lab03/RoblesTostado_JoseAlberto_Lab03   
  * -----------------------------------------------------------------------------------------------------------------------------
+ * // IGNORE THIS, RYAN TOLD ME TO ONLY REMOVE THE PACKAGE AND LEAVE THE FILELOCATION AS IT IS. THANKS
  * X  If you are using an IDE It will depend how you do it based on your configuration. However, I'd advise you to follow the previous steps
  * -  In my case and configuration with VS Code, I need to work from a parent directory that holds my package folder, e.g. <root>/<package>/<files_used>
  * -  Which is why I created the PACKPATCH constant to add before my file so i can have, for this example. File("./Lab03/input.txt")
@@ -22,14 +23,14 @@
  * -----------------------------------------------------------------------------------------------------------------------------
  */
 
-package Lab03;
+// package Lab03; // removed package per Ryan's instructions -> If you have any issues running the code, he can vouch for me because he has run it :)
 
 import java.io.File;
 import java.util.Scanner;
 import java.lang.Math;
 
 public class RoblesTostado_JoseAlberto_Lab03 {
-    public static final String PACKPATH = "./Lab03/";
+    public static final String PACKPATH = ""; // set to empty string per Ryan's instructions
 
     public static void main(String[] args) {
 
