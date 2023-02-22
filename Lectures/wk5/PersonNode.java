@@ -13,4 +13,17 @@ public class PersonNode {
         this.id = id;
         this.hours = hours;
     }
+
+    /*
+     * public void addFirst(E e) {
+     * Node<E> newNode = new Node<>(e); // Create a new node
+     * newNode.next = head; // link the new node with the head
+     * head = newNode; // head points to the new node
+     * size++; // Increase list size
+     * 
+     * if (tail == null) // the new node is the only node in list
+     * tail = head;
+     * }
+     */
+
 }
