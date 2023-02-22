@@ -94,6 +94,7 @@ public class Lab4_RoblesTostado_JoseA {
 
     }
 
+    // printing linked list
     public static void printLL(Person head) {
         while (head != null) {
             System.out.println("Name: " + head.getName());
@@ -107,6 +108,7 @@ public class Lab4_RoblesTostado_JoseA {
         }
     }
 
+    // adding person to LL
     public static Person getPersonFromDataFile(String FILELOC) {
 
         File inputFile;
@@ -119,7 +121,7 @@ public class Lab4_RoblesTostado_JoseA {
             scn = new Scanner(inputFile);
             while (scn.hasNextLine()) {
                 String line = scn.nextLine();
-                String input_arr[] = line.split("\t");
+                String input_arr[] = line.split("\t"); // split by tab
                 if (!exists) {
                     exists = true;
                     head = new Person();
@@ -139,9 +141,6 @@ public class Lab4_RoblesTostado_JoseA {
                     curr.years = Integer.parseInt(input_arr[4]);
                     ;
                 }
-                if (scn.hasNextLine()) {
-                    scn.nextLine();
-                }
 
             }
             scn.close();
@@ -153,6 +152,7 @@ public class Lab4_RoblesTostado_JoseA {
 
     }
 
+    // adding person to LL
     public static Person addPerson(Person head, Person toAdd, int position) {
         if (position < 0) {
             System.out.println("Cannot have a negative position. Returning null.");
@@ -164,7 +164,8 @@ public class Lab4_RoblesTostado_JoseA {
 
             Person curr = head;
             int person_count = 0;
-            while (curr.next != null && person_count < (position - 1)) {
+            while (curr.next != null && person_count < (position - 1)) { // position - 1 because we want to add before
+                                                                         // the position
                 person_count++;
                 curr = curr.next;
             }
@@ -182,9 +183,10 @@ public class Lab4_RoblesTostado_JoseA {
         }
     }
 
+    // adding person to LL
     public static Person deletePerson(Person head, int position) {
         if (position < 0) {
-            System.out.println("Cannot have a negative position. Returning null.");
+            System.out.println("Cannot have a negative position. Returning null."); // if position is negative
             return head;
         } else if (position == 0) {
             head = head.next;
@@ -208,6 +210,7 @@ public class Lab4_RoblesTostado_JoseA {
 
     }
 
+    // adding person to LL
     public static void workedMostYears(Person head) {
         String name = head.getName();
         int max_years = head.years;
@@ -220,9 +223,11 @@ public class Lab4_RoblesTostado_JoseA {
             }
             head = head.next;
         }
-        System.out.println("Name: " + name + " years: " + max_years);
+        System.out.println("Name: " + name + " years: " + max_years); // printing the name and years of the person who
+                                                                      // worked the most
     }
 
+    // adding person to LL
     public static void workedLeastYears(Person head) {
         String name = head.getName();
         int min_years = head.years;
@@ -232,31 +237,33 @@ public class Lab4_RoblesTostado_JoseA {
             if (head.years < min_years) {
                 name = head.getName();
                 min_years = head.years;
-            }
+            } // printing the name and years of the person who worked the least
             head = head.next;
         }
         System.out.println("Name: " + name + " years: " + min_years);
     }
 
+    // adding person to LL
     public static void averageHoursWorked(Person head) {
         int count = 0;
         double curr_sum = 0;
         while (head != null) {
             count++;
-            curr_sum += head.hoursWorked;
+            curr_sum += head.hoursWorked; // adding the hours worked of each person
             head = head.next;
         }
         System.out.println(String.format("Average hours worked: %.2f", (curr_sum / count)));
 
     }
 
+    // adding person to LL
     public static void totalPaymentToEachPerson(Person head) {
         while (head != null) {
             double totalPay = 0;
 
             totalPay += head.hoursWorked * head.hourlyWage;
             if (head.hoursWorked - 40 > 0) {
-                totalPay += (head.hoursWorked - 40) * 2 * head.hourlyWage;
+                totalPay += (head.hoursWorked - 40) * 2 * head.hourlyWage; // adding the overtime pay
             }
             System.out.println("Name: " + head.getName());
             System.out.println("Hours worked: " + head.hoursWorked);
@@ -266,6 +273,7 @@ public class Lab4_RoblesTostado_JoseA {
         }
     }
 
+    // adding person to LL
     public static Person addPersonByCheckingId(Person head, Person newPerson, int position) {
         boolean isFound = false;
         Person curr = head;
@@ -273,7 +281,7 @@ public class Lab4_RoblesTostado_JoseA {
             if (curr.getId() == newPerson.getId()) {
                 isFound = true;
             }
-            curr = curr.next;
+            curr = curr.next; // checking if the id already exist in the linked list
 
         }
         if (isFound) {
