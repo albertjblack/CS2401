@@ -1,0 +1,35 @@
+-----------------------------------------
+          hanoi(n, start, end)
+-----------------------------------------
+
+1) Proper handle the base case
+-> when n is 1
+-> move disk from start to end
+-> pm(start, end) if n = 1
+
+2) Assume f(n-1)
+-> accept that any version of hanoi of n-1 will work
+-> assume subproblems work
+
+3) Show how we can solve N hanoi by f(n) and f(n-1) relationships
+
+!! ISSUE
+-> We start with a reference of start and end rod
+-- we utilize the rod numbers to keep the references [1,2,3]
+-> have a reference for the helper rod used in each problem
+
+Hanoi(n, start, end) := {
+    1. pm(start, end)  n=1 // base case
+    
+    // other_tower_number = 6 - (start + end) // this should give us the tower that is not used when (s,e) // perm - sum(s,e)
+    // other could also be {
+    //    s+e if (s+e) <= 3
+    //    e-s ow.
+    // }
+
+    2. hanoi(n-1, start, other) // assume this works
+        3. pm(s,e) // then just move the Nth to the end
+
+    ! hanoi(n-1, other, end)
+
+}
