@@ -20,12 +20,10 @@ public class Hanoi {
             helper_print(start, " -> ", end);
             return;
         } else {
-
-            int other = (start + end) <= 3 ? (start + end) : (end - start);
+            int other = 6 - (start + end); // (start + end) <= 3 ? (start + end) : (end - start);
             solve(n - 1, start, other);
             helper_print(start, " -> ", end);
             solve(n - 1, other, end);
-
         }
 
     }

@@ -22,6 +22,7 @@ Hanoi(n, start, end) := {
     1. pm(start, end)  n=1 // base case
     
     // other_tower_number = 6 - (start + end) // this should give us the tower that is not used when (s,e) // perm - sum(s,e)
+    // 6 is cuz 1 + 2 + 3 and when you subtract from the entire sum the sum of endpoints you get the one missing
     // other could also be {
     //    s+e if (s+e) <= 3
     //    e-s ow.
